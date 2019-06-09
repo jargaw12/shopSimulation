@@ -25,25 +25,34 @@
         (parameter clientId)
       )
       (class GenerateNewClient reliable timestamp TestSpace
-              (parameter clientId)
        )
       (class AssignToCashRegister reliable timestamp TestSpace
               (parameter clientId)
+              (parameter cashRegisterId)
        )
       (class OpenNewCashRegister reliable timestamp TestSpace
-              (parameter clientId)
+              (parameter cashRegisterId)
+       )
+      (class CloseCashRegister reliable timestamp TestSpace
+              (parameter cashRegisterId)
        )
       (class StartCustomerService reliable timestamp TestSpace
               (parameter clientId)
+              (parameter cashRegisterId)
        )
       (class FinishCustomerService reliable timestamp TestSpace
               (parameter clientId)
+              (parameter cashRegisterId)
        )
       (class CalculateStatistics reliable timestamp TestSpace
-              (parameter clientId)
+              (parameter cashRegisterId)
+              (parameter avgWaitingTime)
+              (parameter avgQueueLength)
+              (parameter numberOfClients)
        )
       (class FinishShopping reliable timestamp TestSpace
               (parameter clientId)
+              (parameter basketSize)
        )
     )
   )

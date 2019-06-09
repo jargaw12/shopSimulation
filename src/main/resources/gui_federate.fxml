@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="1600.0"
+            xmlns="http://javafx.com/javafx/8.0.172-ea" fx:controller="msk.gui.GuiController">
+    <children>
+        <HBox layoutX="76.0" layoutY="163.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="15.0"
+              AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <padding>
+                <Insets left="5.0" right="5.0"/>
+            </padding>
+            <children>
+                <LineChart fx:id="chartAvgTime" nodeOrientation="LEFT_TO_RIGHT" title="Średni czas oczekiwania">
+                    <xAxis>
+                        <NumberAxis side="BOTTOM"/>
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis side="LEFT"/>
+                    </yAxis>
+                    <HBox.margin>
+                        <Insets right="5.0"/>
+                    </HBox.margin>
+                </LineChart>
+                <LineChart fx:id="chartAvgQueueLength" nodeOrientation="LEFT_TO_RIGHT" title="Długość kolejki">
+                    <xAxis>
+                        <NumberAxis side="BOTTOM"/>
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis side="LEFT" tickUnit="1.0"/>
+                    </yAxis>
+                    <HBox.margin>
+                        <Insets right="5.0"/>
+                    </HBox.margin>
+                </LineChart>
+                <LineChart fx:id="chartCostumerCount" nodeOrientation="LEFT_TO_RIGHT"
+                           title="Ilość obsłużonych klientów">
+                    <xAxis>
+                        <NumberAxis side="BOTTOM"/>
+                    </xAxis>
+                    <yAxis>
+                        <NumberAxis side="LEFT" tickUnit="1.0"/>
+                    </yAxis>
+                </LineChart>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

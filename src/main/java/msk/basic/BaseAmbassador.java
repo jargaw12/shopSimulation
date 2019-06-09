@@ -1,59 +1,71 @@
 package msk.basic;
 
-import hla.rti.LogicalTime;
-import hla.rti.jlc.NullFederateAmbassador;
-import hla.rti1516e.InteractionClassHandle;
+import hla.rti1516e.*;
+import hla.rti1516e.encoding.DecoderException;
+import hla.rti1516e.encoding.HLAinteger16BE;
+import hla.rti1516e.exceptions.FederateInternalError;
+import hla.rti1516e.time.HLAfloat64Time;
 import msk.utils.Interaction;
-import org.portico.impl.hla13.types.DoubleTime;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Map;
+import java.util.PriorityQueue;
+
 
 public abstract class BaseAmbassador extends NullFederateAmbassador {
-
-    private BaseFederate fed;
-    private ArrayList<Interaction> interactionList = new ArrayList<>();
-    private HashMap<String, InteractionClassHandle> interactionHandles = new HashMap<>();
-    private HashMap<InteractionClassHandle, ArrayList<String>> interactionParameters = new HashMap<>();
-
-    public double federateTime = 0.0;
-    public double federateLookahead = 1.0;
-
+    protected double federateTime = 0.0;
+    protected double federateLookahead = 1.0;
     protected boolean isRegulating = false;
     protected boolean isConstrained = false;
     protected boolean isAdvancing = false;
-
     protected boolean isAnnounced = false;
     protected boolean isReadyToRun = false;
+    protected Map<InteractionClassHandle, String> interactionClassHandles = new HashMap<>();
+    protected Map<ParameterHandle, String> parameterHandles = new HashMap<>();
+    protected PriorityQueue<Interaction> interactions = new PriorityQueue<>();
+    private BaseFederate federate;
 
-    protected boolean running = true;
 
-
-    private double convertTime(LogicalTime logicalTime) {
-        // PORTICO SPECIFIC!!
-        return ((DoubleTime) logicalTime).getTime();
+    public BaseAmbassador() {
     }
 
     private void log(String message) {
         System.out.println("FederateAmbassador: " + message);
     }
 
-    public void synchronizationPointRegistrationFailed(String label) {
-        log("Failed to register sync point: " + label);
+
+    private short decodeNumCups(byte[] bytes) {
+        HLAinteger16BE value = federate.encoderFactory.createHLAinteger16BE();
+        // decode
+        try {
+            value.decode(bytes);
+            return value.getValue();
+        } catch (DecoderException de) {
+            de.printStackTrace();
+            return 0;
+        }
     }
 
+    @Override
+    public void synchronizationPointRegistrationFailed(String label,
+                                                       SynchronizationPointFailureReason reason) {
+        log("Failed to register sync point: " + label + ", reason=" + reason);
+    }
+
+    @Override
     public void synchronizationPointRegistrationSucceeded(String label) {
         log("Successfully registered sync point: " + label);
     }
 
+    @Override
     public void announceSynchronizationPoint(String label, byte[] tag) {
         log("Synchronization point announced: " + label);
         if (label.equals(BaseFederate.READY_TO_RUN))
             this.isAnnounced = true;
     }
 
-    public void federationSynchronized(String label) {
+    @Override
+    public void federationSynchronized(String label, FederateHandleSet failed) {
         log("Federation Synchronized: " + label);
         if (label.equals(BaseFederate.READY_TO_RUN))
             this.isReadyToRun = true;
@@ -62,37 +74,84 @@ public abstract class BaseAmbassador extends NullFederateAmbassador {
     /**
      * The RTI has informed us that time regulation is now enabled.
      */
-    public void timeRegulationEnabled(LogicalTime theFederateTime) {
-        this.federateTime = convertTime(theFederateTime);
+    @Override
+    public void timeRegulationEnabled(LogicalTime time) {
+        this.federateTime = ((HLAfloat64Time) time).getValue();
         this.isRegulating = true;
     }
 
-    public void timeConstrainedEnabled(LogicalTime theFederateTime) {
-        this.federateTime = convertTime(theFederateTime);
+    @Override
+    public void timeConstrainedEnabled(LogicalTime time) {
+        this.federateTime = ((HLAfloat64Time) time).getValue();
         this.isConstrained = true;
     }
 
-    public void timeAdvanceGrant(LogicalTime theTime) {
-        this.federateTime = convertTime(theTime);
+    @Override
+    public void timeAdvanceGrant(LogicalTime time) {
+        this.federateTime = ((HLAfloat64Time) time).getValue();
         this.isAdvancing = false;
     }
 
-    public void registerHandle(String name, InteractionClassHandle handle, String [] params) {
-        if(!interactionHandles.containsKey(name)) {
-            interactionHandles.put(name, handle);
-        }
 
-        if(!interactionParameters.containsKey(handle) && params != null) {
-            interactionParameters.put(handle, new ArrayList<>(Arrays.asList(params)));
-        }
+    @Override
+    public void receiveInteraction(InteractionClassHandle interactionClass,
+                                   ParameterHandleValueMap theParameters,
+                                   byte[] tag,
+                                   OrderType sentOrdering,
+                                   TransportationTypeHandle theTransport,
+                                   LogicalTime time,
+                                   OrderType receivedOrdering,
+                                   SupplementalReceiveInfo receiveInfo) {
+        Interaction interaction = parseInteraction(interactionClass, theParameters, time);
+        if (interaction != null)
+            System.out.println(" *  receiveInteraction " + interaction.toString());
+        interactions.add(interaction);
     }
 
-    public ArrayList<Interaction> getInteractions() {
-        return interactionList;
+    private Interaction parseInteraction(InteractionClassHandle interactionClass, ParameterHandleValueMap theParameters, LogicalTime time) {
+        String interactionName = getInteractionName(interactionClass);
+        Interaction interaction = new Interaction(interactionName);
+        interaction.setTime(((HLAfloat64Time) time).getValue());
+        theParameters.forEach((key, value) -> {
+            String paramName = getParamName(key);
+            if (paramName != null)
+                interaction.addParameter(paramName, value);
+        });
+        return interaction;
     }
 
-    public void clearInteractions() {
-        interactionList.clear();
+    private String getInteractionName(InteractionClassHandle code) {
+        return interactionClassHandles.get(code);
     }
 
+    private String getParamName(ParameterHandle code) {
+        return parameterHandles.get(code);
+    }
+
+
+    @Override
+    public void removeObjectInstance(ObjectInstanceHandle theObject,
+                                     byte[] tag,
+                                     OrderType sentOrdering,
+                                     SupplementalRemoveInfo removeInfo)
+            throws FederateInternalError {
+        log("Object Removed: handle=" + theObject);
+    }
+
+    public void registerClassHandle(String name, InteractionClassHandle handle) {
+        interactionClassHandles.put(handle, name);
+    }
+
+    public void registerParameterHandle(String name, ParameterHandle handle) {
+        parameterHandles.put(handle, name);
+    }
+
+    public PriorityQueue<Interaction> getInteractions() {
+        return interactions;
+    }
+
+    public BaseAmbassador setFederate(BaseFederate federate) {
+        this.federate = federate;
+        return this;
+    }
 }
