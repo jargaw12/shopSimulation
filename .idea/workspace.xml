@@ -1,27 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f968e9d-2c16-4691-b98b-64d66bb9d5b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/msk/HandlersHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/msk/basic/BaseAmbassador2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/msk/basic/BaseFederate2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/msk/cashregister/CashRegisterFederate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/msk/utils/Encoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/msk/utils/Interaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/msk/utils/InteractionParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/msk/utils/InteractionType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/shop.fed" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/portico.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/portico.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/basic/BaseAmbasador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/msk/basic/BaseAmbassador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/basic/BaseFederate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/msk/basic/BaseFederate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cashregister/CashRegisterAmbasador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/msk/cashregister/CashRegisterAmbassador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cashregister/CashRegisterFederate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/customer/CustomerAmbasador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/msk/customer/CustomerAmbassador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/customer/CustomerFederate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/msk/customer/CustomerFederate.java" afterDir="false" />
+    <list default="true" id="8f968e9d-2c16-4691-b98b-64d66bb9d5b5" name="Default Changelist" comment="rg">
+      <change afterPath="$PROJECT_DIR$/documentation/Symulacja sklepu - dokumentacja.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/images/activiti_diagram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/images/federation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/images/fom_model.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/images/interaction_description.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/images/publish_subscribe_interaction.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/documentation/images/simulation_result.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,181 +23,56 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/msk/basic/BaseAmbassador2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5303#5304#0" expanded="true" />
-                <element signature="e#5353#5354#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/msk/basic/BaseFederate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="38" column="63" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#5316#5317#0" expanded="true" />
-                <element signature="e#5384#5385#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/msk/basic/BaseFederate2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="577">
-              <caret line="227" column="9" lean-forward="true" selection-start-line="227" selection-start-column="9" selection-end-line="227" selection-end-column="9" />
-              <folding>
-                <element signature="e#9618#9619#0" expanded="true" />
-                <element signature="e#9733#9734#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/msk/utils/Encoder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/msk/utils/InteractionParam.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding>
-                <element signature="e#314#315#0" expanded="true" />
-                <element signature="e#341#342#0" expanded="true" />
-                <element signature="e#373#374#0" expanded="true" />
-                <element signature="e#401#402#0" expanded="true" />
-                <element signature="e#432#433#0" expanded="true" />
-                <element signature="e#459#460#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/msk/cashregister/CashRegisterAmbassador.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="57" lean-forward="true" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#215#216#0" expanded="true" />
-                <element signature="e#246#247#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/msk/customer/CustomerFederate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/msk/basic/BaseAmbassador.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="89" column="53" selection-start-line="89" selection-start-column="53" selection-end-line="89" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3014#3015#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/msk/utils/Interaction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
-              <folding>
-                <element signature="e#1459#1460#0" expanded="true" />
-                <element signature="e#1474#1475#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/msk/cashregister/CashRegisterFederate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Enum" />
+        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="Singleton" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getInteractionClassHandle</find>
-      <find>createF</find>
-      <find>run</find>
-      <find>file</find>
-      <find>ShopFederation</find>
-      <find>FinishShopping</find>
-      <find>Storage</find>
-      <find>13</find>
-      <find>handle  -</find>
-      <find>handle</find>
-      <find>interactionList</find>
-      <find>Fin</find>
-      <find>Interaction</find>
-      <find>fedamb.re</find>
-      <find>InteractionRoot</find>
-      <find>abstra</find>
-      <find>recei</find>
-      <find>receiveInteraction</find>
-      <find>URI</find>
+      <find>stage</find>
+      <find>new Clie</find>
+      <find>shortestQueue</find>
+      <find>onOpenNewCashRegister</find>
+      <find>assig</find>
+      <find>shortes</find>
+      <find>addNewSeries</find>
+      <find>addNewS</find>
+      <find>onOp</find>
+      <find>openNew</find>
+      <find>open new cas</find>
+      <find>shortest</find>
+      <find>shortestQueue nr:</find>
+      <find>newA</find>
+      <find>free</find>
+      <find>new Finish</find>
+      <find>subscribeInteraction(InteractionType.F</find>
+      <find>FinishCustomerService()</find>
+      <find>OpenNewCashRegister</find>
+      <find>finis</find>
       <find>finish</find>
-      <find>sendInteraction</find>
-      <find>parse</find>
-      <find>createFederationExecution</find>
-      <find>ExampleFed</find>
-      <find>join</find>
-      <find>federationSynchronized</find>
-      <find>advanceTime</find>
       <find>sendI</find>
-      <find>send</find>
-      <find>rec</find>
+      <find>need</find>
+      <find>x x</find>
+      <find>time</find>
+      <find>OnRun()</find>
+      <find>comp</find>
+      <find>x x x</find>
+      <find>close</find>
+      <find>open</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>stepChange()</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -217,9 +80,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/basic/BasicAmbasador.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cashregister/CashRegisterAmbasador.java" />
-        <option value="$PROJECT_DIR$/src/main/java/customer/CashRegisterAmbasador.java" />
         <option value="$PROJECT_DIR$/src/main/java/customer/CustomerAmbasador.java" />
         <option value="$PROJECT_DIR$/src/main/java/basic/BaseFederate.java" />
         <option value="$PROJECT_DIR$/src/main/java/cashregister/CashRegisterFederate.java" />
@@ -228,18 +88,49 @@
         <option value="$PROJECT_DIR$/src/main/java/basic/BaseAmbassador.java" />
         <option value="$PROJECT_DIR$/src/main/java/msk/HandlersHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/msk/shop.fed" />
-        <option value="$PROJECT_DIR$/src/main/java/msk/basic/BaseAmbassador.java" />
-        <option value="$PROJECT_DIR$/src/main/java/msk/customer/CustomerAmbassador.java" />
-        <option value="$PROJECT_DIR$/src/main/java/msk/cashregister/CashRegisterAmbassador.java" />
-        <option value="$PROJECT_DIR$/src/main/java/msk/basic/BaseFederate.java" />
         <option value="$PROJECT_DIR$/src/main/java/msk/utils/Interactions.java" />
+        <option value="$PROJECT_DIR$/src/main/java/msk/utils/Encoder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/msk/basic/BaseAmbassador2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/msk/basic/BaseFederate2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/msk/cashregister/CashRegisterAmbassador.java" />
+        <option value="$PROJECT_DIR$/src/main/java/msk/customer/CustomerAmbassador.java" />
+        <option value="$PROJECT_DIR$/src/main/java/msk/gui/GuiAmbassador.java" />
+        <option value="$PROJECT_DIR$/src/main/java/msk/shop/ShopAmbassador.java" />
+        <option value="$PROJECT_DIR$/src/main/java/msk/statistics/StatisticsAmbassador.java" />
+        <option value="$PROJECT_DIR$/src/main/java/msk/cashregister/CashRegisterState.java" />
+        <option value="$PROJECT_DIR$/src/main/java/msk/cashregister/CashRegisterStatus.java" />
+        <option value="$PROJECT_DIR$/src/main/java/msk/TestMain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/msk/statistics/WaitingClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/msk/Interactions/CloseNewCashRegister.java" />
+        <option value="$PROJECT_DIR$/src/main/java/msk/utils/InteractionHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/msk/utils/InteractionType.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/gui_federate.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/shop.fed" />
         <option value="$PROJECT_DIR$/src/main/java/msk/customer/CustomerFederate.java" />
         <option value="$PROJECT_DIR$/src/main/java/msk/utils/InteractionParam.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/msk/Interactions/AssignToCashRegister.java" />
+        <option value="$PROJECT_DIR$/src/main/java/msk/Interactions/CalculateStatistics.java" />
+        <option value="$PROJECT_DIR$/src/main/java/msk/Interactions/CloseCashRegister.java" />
+        <option value="$PROJECT_DIR$/src/main/java/msk/Interactions/FinishCustomerService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/msk/Interactions/FinishShopping.java" />
+        <option value="$PROJECT_DIR$/src/main/java/msk/Interactions/OpenNewCashRegister.java" />
+        <option value="$PROJECT_DIR$/src/main/java/msk/Interactions/InteractionRoot.java" />
+        <option value="$PROJECT_DIR$/src/main/java/msk/Interactions/StartCustomerService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/msk/statistics/WaitingCustomer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/msk/utils/InteractionParameter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/msk/gui/GuiFederate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/msk/gui/GuiController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/msk/cashregister/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/java/msk/basic/BaseFederate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/msk/Interactions/GenerateNewClient.java" />
+        <option value="$PROJECT_DIR$/src/main/java/msk/gui/GuiApplication.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/msk/basic/BaseAmbassador.java" />
         <option value="$PROJECT_DIR$/src/main/java/msk/utils/Interaction.java" />
         <option value="$PROJECT_DIR$/src/main/java/msk/cashregister/CashRegisterFederate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/msk/basic/BaseAmbassador2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/msk/basic/BaseFederate2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/msk/shop/ShopFederate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/msk/statistics/StatisticsFederate.java" />
       </list>
     </option>
   </component>
@@ -266,98 +157,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="shopSimulation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopSimulation" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopSimulation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopSimulation" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopSimulation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopSimulation" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopSimulation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopSimulation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopSimulation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopSimulation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopSimulation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopSimulation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopSimulation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopSimulation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="msk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopSimulation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopSimulation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="msk" type="462c0819:PsiDirectoryNode" />
-              <item name="basic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopSimulation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopSimulation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="msk" type="462c0819:PsiDirectoryNode" />
-              <item name="cashregister" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopSimulation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopSimulation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="msk" type="462c0819:PsiDirectoryNode" />
-              <item name="customer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopSimulation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopSimulation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="msk" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shopSimulation" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shopSimulation" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -366,27 +168,30 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/portico.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/documentation/images" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jaroslaw\Desktop\portico-master\shopSimulation\documentation\images" />
+      <recent name="C:\Users\Jaroslaw\Desktop\portico-master\shopSimulation\documentation" />
+      <recent name="C:\Users\Jaroslaw\Desktop\portico-master\shopSimulation\src\main\java\msk\gui" />
+      <recent name="C:\Users\Jaroslaw\Desktop\portico-master\shopSimulation\src\main\java\msk\statistics" />
+      <recent name="C:\Users\Jaroslaw\Desktop\portico-master\shopSimulation\src\main\java\msk\shop" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="msk.Interactions" />
+      <recent name="msk.basic" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Jaroslaw\Desktop\portico-master\shopSimulation\src\main\resources" />
       <recent name="C:\Users\Jaroslaw\Desktop\portico-master\shopSimulation\lib" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="msk.basic" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Jaroslaw\Desktop\portico-master\shopSimulation\src\main\java\msk" />
-      <recent name="C:\Users\Jaroslaw\Desktop\portico-master\shopSimulation\src\main\java" />
-      <recent name="C:\Users\Jaroslaw\Desktop\portico-master\shopSimulation\src\main\java\customer" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -401,8 +206,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.CustomerFederate">
-    <configuration name="CashRegisterFederate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.StatisticsFederate">
+    <configuration name="CashRegisterFederate" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="msk.cashregister.CashRegisterFederate" />
       <module name="shopSimulation" />
       <extension name="coverage">
@@ -415,7 +220,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerFederate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerFederate" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="msk.customer.CustomerFederate" />
       <module name="shopSimulation" />
       <extension name="coverage">
@@ -428,14 +233,99 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GuiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="msk.gui.GuiApplication" />
+      <module name="shopSimulation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="msk.gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GuiFederate" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="msk.gui.GuiFederate" />
+      <module name="shopSimulation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="msk.gui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopFederate" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="msk.shop.ShopFederate" />
+      <module name="shopSimulation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="msk.shop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StatisticsFederate" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="msk.statistics.StatisticsFederate" />
+      <module name="shopSimulation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="msk.statistics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="shopSimulation" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2">
+        <option name="RunConfigurationTask" enabled="true" run_configuration_name="CashRegisterFederate" run_configuration_type="Application" />
+        <option name="RunConfigurationTask" enabled="true" run_configuration_name="CustomerFederate" run_configuration_type="Application" />
+        <option name="RunConfigurationTask" enabled="true" run_configuration_name="StatisticsFederate" run_configuration_type="Application" />
+        <option name="RunConfigurationTask" enabled="true" run_configuration_name="GuiFederate" run_configuration_type="Application" />
+        <option name="RunConfigurationTask" enabled="true" run_configuration_name="ShopFederate" run_configuration_type="Application" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.CashRegisterFederate" />
       <item itemvalue="Application.CustomerFederate" />
+      <item itemvalue="Application.StatisticsFederate" />
+      <item itemvalue="Application.GuiFederate" />
+      <item itemvalue="Application.ShopFederate" />
+      <item itemvalue="Application.GuiApplication" />
+      <item itemvalue="Maven.shopSimulation" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CustomerFederate" />
-        <item itemvalue="Application.CashRegisterFederate" />
+        <item itemvalue="Application.GuiApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -454,127 +344,108 @@
       <workItem from="1558465598558" duration="2879000" />
       <workItem from="1558549684237" duration="3068000" />
       <workItem from="1558791111579" duration="344000" />
-      <workItem from="1559470047238" duration="46703000" />
+      <workItem from="1559470047238" duration="47024000" />
+      <workItem from="1559767776604" duration="54731000" />
+      <workItem from="1560011509987" duration="14267000" />
+      <workItem from="1560026218724" duration="26662000" />
+      <workItem from="1560092659132" duration="2480000" />
+      <workItem from="1560099729752" duration="14937000" />
+      <workItem from="1560155859737" duration="683000" />
     </task>
+    <task id="LOCAL-00001" summary="rg">
+      <created>1559765703657</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1559765703657</updated>
+    </task>
+    <task id="LOCAL-00002" summary="rg - finished project">
+      <created>1560108689366</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1560108689366</updated>
+    </task>
+    <task id="LOCAL-00003" summary="rg - subscribe FinishCustomerService interaction instead of StartCustomerService in ShopFederate; refactoring">
+      <created>1560155449832</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1560155449832</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56563000" />
+    <option name="totallyTimeSpent" value="170644000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945828" visible="true" weight="0.16151386" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945828" visible="true" weight="0.18017058" />
       <window_info id="Structure" order="1" sideWeight="0.5005417" side_tool="true" weight="0.16151386" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Learn" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32936078" />
-      <window_info anchor="bottom" id="Inspection Results" weight="0.32936078" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32502708" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Codota" order="4" />
-      <window_info anchor="right" id="Maven" order="5" weight="0.2585288" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
-      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="bottom" id="Statistic" order="0" weight="0.32936078" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.25893825" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.39761648" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.32936078" />
+      <window_info anchor="right" id="Key Promoter X" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Codota" order="5" weight="0.18923241" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.2585288" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="rg" />
+    <MESSAGE value="rg - finished project" />
+    <MESSAGE value="rg - subscribe FinishCustomerService interaction instead of StartCustomerService in ShopFederate; refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="rg - subscribe FinishCustomerService interaction instead of StartCustomerService in ShopFederate; refactoring" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/msk/basic/BaseAmbassador2.java</url>
-          <line>120</line>
+          <url>file://$PROJECT_DIR$/src/main/java/msk/cashregister/CashRegisterFederate.java</url>
+          <line>108</line>
           <properties />
-          <option name="timeStamp" value="16" />
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/msk/statistics/StatisticsFederate.java</url>
+          <line>118</line>
+          <properties />
+          <option name="timeStamp" value="87" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/basic.java" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1375" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/msk/Example13Federate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4505">
-          <caret line="313" column="8" selection-start-line="313" selection-start-column="8" selection-end-line="313" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/msk/Example13FederateAmbassador.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3137">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/portico.jar!/org/portico/impl/hla13/Rti13Ambassador.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="262" column="74" lean-forward="true" selection-start-line="262" selection-start-column="74" selection-end-line="262" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/portico.jar!/hla/rti1516e/InteractionClassHandle.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/msk/customer/CustomerAmbassador.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#236#237#0" expanded="true" />
-            <element signature="e#267#268#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="10" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/portico.jar!/hla/rti1516e/RTIambassador.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="129" column="19" selection-start-line="129" selection-start-column="19" selection-end-line="129" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/portico.jar!/org/portico/impl/hla1516e/Rti1516eAmbassador.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="469" column="127" selection-start-line="469" selection-start-column="127" selection-end-line="469" selection-end-column="127" />
         </state>
       </provider>
     </entry>
@@ -585,13 +456,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/shop.fed">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logs/portico.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -599,127 +463,383 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/msk/HandlersHelper.java">
+    <entry file="jar://$PROJECT_DIR$/lib/portico.jar!/hla/rti1516e/RtiFactoryFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Random.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="327" column="15" selection-start-line="327" selection-start-column="15" selection-end-line="327" selection-end-column="15" />
+          <folding>
+            <element signature="e#11985#11986#0" expanded="true" />
+            <element signature="e#12016#12017#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/portico.jar!/org/portico/impl/hla1516e/Rti1516eAmbassador.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="2209" column="38" selection-start-line="2209" selection-start-column="38" selection-end-line="2209" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/portico.jar!/hla/rti1516e/RTIambassador.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="363" column="20" selection-start-line="363" selection-start-column="20" selection-end-line="363" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/msk/TestMain.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/javafx-src.zip!/javafx/beans/value/ObservableObjectValue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+          <caret line="42" column="6" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/javafx-src.zip!/javafx/beans/binding/ObjectExpression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+          <folding>
+            <element signature="e#1046#1047#0" expanded="true" />
+            <element signature="e#1074#1075#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/javafx-src.zip!/javafx/scene/chart/XYChart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="1598" column="76" lean-forward="true" selection-start-line="1598" selection-start-column="76" selection-end-line="1598" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="2408" selection-start-line="2408" selection-end-line="2408" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/msk/gui/Sin.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Number.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="54" column="22" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/javafx-src.zip!/javafx/scene/chart/NumberAxis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="120" column="22" selection-start-line="120" selection-start-column="22" selection-end-line="120" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/gui_federate.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="31" column="57" selection-start-line="31" selection-start-column="57" selection-end-line="31" selection-end-column="57" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/msk/HandlersHelper.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/msk/shop/ShopAmbassador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="52" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/msk/Interactions/CloseCashRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/msk/Interactions/FinishCustomerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/msk/Interactions/OpenNewCashRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/msk/Interactions/StartCustomerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/msk/statistics/StatisticsAmbassador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/msk/gui/GuiAmbassador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/msk/customer/CustomerAmbassador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/msk/Interactions/GenerateNewClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-663" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/msk/gui/GuiApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/msk/cashregister/CashRegisterStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/msk/cashregister/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/msk/gui/GuiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-564">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/msk/statistics/WaitingCustomer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/msk/Interactions/AssignToCashRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/msk/Interactions/CalculateStatistics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/msk/utils/InteractionType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        <state relative-caret-position="187">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/msk/utils/InteractionParam.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/msk/utils/InteractionParameter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="170">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/msk/utils/InteractionHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="57" selection-start-line="6" selection-start-column="57" selection-end-line="6" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/shop.fed">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/msk/utils/Encoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/msk/basic/BaseAmbassador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1632">
+          <caret line="107" column="33" selection-start-line="107" selection-start-column="33" selection-end-line="107" selection-end-column="33" />
           <folding>
-            <element signature="e#314#315#0" expanded="true" />
-            <element signature="e#341#342#0" expanded="true" />
-            <element signature="e#373#374#0" expanded="true" />
-            <element signature="e#401#402#0" expanded="true" />
-            <element signature="e#432#433#0" expanded="true" />
-            <element signature="e#459#460#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#4473#4474#0" expanded="true" />
+            <element signature="e#4529#4530#0" expanded="true" />
+            <element signature="e#4586#4587#0" expanded="true" />
+            <element signature="e#4635#4636#0" expanded="true" />
+            <element signature="e#5223#5224#0" expanded="true" />
+            <element signature="e#5273#5274#0" expanded="true" />
+            <element signature="e#5332#5333#0" expanded="true" />
+            <element signature="e#5367#5368#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/msk/utils/Interaction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="544">
+          <caret line="46" column="36" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/msk/Interactions/FinishShopping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
           <folding>
-            <element signature="e#1459#1460#0" expanded="true" />
-            <element signature="e#1474#1475#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/msk/cashregister/CashRegisterAmbassador.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/msk/Interactions/InteractionRoot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="57" lean-forward="true" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+        <state relative-caret-position="68">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#215#216#0" expanded="true" />
-            <element signature="e#246#247#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/msk/basic/BaseFederate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="38" column="63" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5316#5317#0" expanded="true" />
-            <element signature="e#5384#5385#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="323">
+          <caret line="112" column="21" selection-start-line="112" selection-start-column="21" selection-end-line="112" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/msk/basic/BaseAmbassador.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/msk/cashregister/CashRegisterAmbassador.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="89" column="53" selection-start-line="89" selection-start-column="53" selection-end-line="89" selection-end-column="53" />
+        <state relative-caret-position="85">
+          <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/msk/cashregister/CashRegisterFederate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="122" column="31" selection-start-line="122" selection-start-column="31" selection-end-line="122" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3014#3015#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/msk/customer/CustomerFederate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        <state relative-caret-position="782">
+          <caret line="52" column="48" selection-start-line="52" selection-start-column="48" selection-end-line="52" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/msk/cashregister/CashRegisterFederate.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/msk/gui/GuiFederate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+        <state relative-caret-position="697">
+          <caret line="47" column="40" lean-forward="true" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/msk/utils/Encoder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/msk/shop/ShopFederate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="864">
+          <caret line="68" column="22" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/msk/basic/BaseAmbassador2.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/msk/statistics/StatisticsFederate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
+        <state relative-caret-position="425">
+          <caret line="34" column="23" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5303#5304#0" expanded="true" />
-            <element signature="e#5353#5354#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/msk/basic/BaseFederate2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="227" column="9" lean-forward="true" selection-start-line="227" selection-start-column="9" selection-end-line="227" selection-end-column="9" />
-          <folding>
-            <element signature="e#9618#9619#0" expanded="true" />
-            <element signature="e#9733#9734#0" expanded="true" />
           </folding>
         </state>
       </provider>
