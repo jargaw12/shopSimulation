@@ -43,8 +43,9 @@ public class ShopFederate extends BaseFederate {
         log("publishAndSubscribe()");
         publishInteraction(InteractionType.OPEN_NEW_CASH_REGISTER);
         publishInteraction(InteractionType.CLOSE_CASH_REGISTER);
+
         subscribeInteraction(InteractionType.ASSIGN_TO_CASH_REGISTER);
-        subscribeInteraction(InteractionType.START_CUSTOMER_SERVICE);
+        subscribeInteraction(InteractionType.FINISH_CUSTOMER_SERVICE);
     }
 
     @Override
@@ -54,15 +55,15 @@ public class ShopFederate extends BaseFederate {
             case InteractionType.ASSIGN_TO_CASH_REGISTER:
                 onAssignToCashRegister(interaction);
                 break;
-            case InteractionType.START_CUSTOMER_SERVICE:
-                onStartCustomerService(interaction);
+            case InteractionType.FINISH_CUSTOMER_SERVICE:
+                onFinishCustomerService(interaction);
                 break;
         }
     }
 
-    private void onStartCustomerService(Interaction interaction) throws RTIexception {
+    private void onFinishCustomerService(Interaction interaction) throws RTIexception {
         StartCustomerService objectInteraction = StartCustomerService.toInteractionObject(interaction);
-        System.out.println("onStartCustomerService() " + objectInteraction.toString());
+        System.out.println("onFinishCustomerService() " + objectInteraction.toString());
 
         decreaseQueueLength(objectInteraction.getCashRegisterId());
         if (needToCloseCashRegister(objectInteraction.getCashRegisterId()))
@@ -92,7 +93,7 @@ public class ShopFederate extends BaseFederate {
     }
 
     private boolean needToOpenNewCashRegister() {
-        boolean allQueuesAreTooLong = queuesLength.values().stream().allMatch(count -> count >= MAX_QUEUE_LENGTH);
+        boolean allQueuesAreTooLong = queuesLength.values().stream().allMatch(count -> count >= (MAX_QUEUE_LENGTH + 1));
         boolean allCashRegisterAreOpen = queuesLength.size() == MAX_CASH_REGISTER_COUNT;
         return allQueuesAreTooLong && !allCashRegisterAreOpen;
     }
@@ -114,7 +115,7 @@ public class ShopFederate extends BaseFederate {
         boolean moreThenMinCashRegisterAreOpen = queuesLength.size() > MIN_CASH_REGISTER_COUNT;
         boolean otherQueuesNotHaveMaxLength = !queuesLength.entrySet().stream()
                 .filter(entry -> entry.getKey() != cashRegisterId)
-                .allMatch(entry -> entry.getValue() >= MAX_QUEUE_LENGTH);
+                .allMatch(entry -> entry.getValue() > MAX_QUEUE_LENGTH);
 
         return cashRegisterIsEmpty && moreThenMinCashRegisterAreOpen && otherQueuesNotHaveMaxLength;
     }

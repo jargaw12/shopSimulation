@@ -34,6 +34,7 @@ public class StatisticsFederate extends BaseFederate {
     protected void publishAndSubscribe() throws RestoreInProgress, NameNotFound, InteractionClassNotDefined, SaveInProgress, FederateNotExecutionMember, RTIinternalError, FederateServiceInvocationsAreBeingReportedViaMOM, NotConnected, InvalidInteractionClassHandle {
         log("publishAndSubscribe()");
         publishInteraction(InteractionType.CALCULATE_STATISTICS);
+
         subscribeInteraction(InteractionType.ASSIGN_TO_CASH_REGISTER);
         subscribeInteraction(InteractionType.START_CUSTOMER_SERVICE);
     }

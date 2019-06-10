@@ -103,9 +103,10 @@ public abstract class BaseAmbassador extends NullFederateAmbassador {
                                    OrderType receivedOrdering,
                                    SupplementalReceiveInfo receiveInfo) {
         Interaction interaction = parseInteraction(interactionClass, theParameters, time);
-        if (interaction != null)
+        if (interaction != null) {
             System.out.println(" *  receiveInteraction " + interaction.toString());
-        interactions.add(interaction);
+            interactions.add(interaction);
+        }
     }
 
     private Interaction parseInteraction(InteractionClassHandle interactionClass, ParameterHandleValueMap theParameters, LogicalTime time) {

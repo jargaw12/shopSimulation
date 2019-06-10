@@ -51,6 +51,7 @@ public class CashRegisterFederate extends BaseFederate {
         publishInteraction(InteractionType.ASSIGN_TO_CASH_REGISTER);
         publishInteraction(InteractionType.START_CUSTOMER_SERVICE);
         publishInteraction(InteractionType.FINISH_CUSTOMER_SERVICE);
+
         subscribeInteraction(InteractionType.FINISH_SHOPPING);
         subscribeInteraction(InteractionType.OPEN_NEW_CASH_REGISTER);
         subscribeInteraction(InteractionType.CLOSE_CASH_REGISTER);
@@ -116,8 +117,8 @@ public class CashRegisterFederate extends BaseFederate {
 
     private void startService(Integer cashRegisterId, Client client) {
         System.out.println("startService(cash, client) " + cashRegisterId + ",  " + client.toString());
-        cashRegisterStatuses.put(cashRegisterId, client);
         cashRegisterQueues.get(cashRegisterId).remove(client);
+        cashRegisterStatuses.put(cashRegisterId, client);
 
         Interaction startCustomerServiceInteraction = new StartCustomerService(client.getClientId(), cashRegisterId).toInteraction();
         try {
